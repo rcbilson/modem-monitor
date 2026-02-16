@@ -1,0 +1,10 @@
+services:
+  modem-monitor:
+    build: .
+    privileged: true
+    network_mode: host
+    restart: unless-stopped
+    environment:
+      - PING_TARGETS=8.8.8.8,1.1.1.1
+      - GPIO_PIN=4
+      - METRICS_ADDR=:9090
