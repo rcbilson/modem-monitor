@@ -5,8 +5,6 @@ go 1.24.4
 require (
 	github.com/prometheus-community/pro-bing v0.8.0
 	github.com/prometheus/client_golang v1.23.2
-	periph.io/x/conn/v3 v3.7.2
-	periph.io/x/host/v3 v3.8.5
 )
 
 require (
